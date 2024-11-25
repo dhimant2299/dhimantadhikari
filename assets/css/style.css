@@ -1557,3 +1557,55 @@ footer .credits a {
 .icon-modify i {
   vertical-align: middle; /* Align icons properly */
 }
+#app-store {
+  text-align: center;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap; /* Ensure apps wrap to the next line if needed */
+  justify-content: center; /* Center the items */
+  gap: 20px; /* Add spacing between items */
+}
+
+.app-box {
+  border: 1px solid #efebeb;
+  max-width: 300px; /* Adjust to your preference, e.g., 300px */
+  margin: 0 auto 20px;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  flex: 1 1 calc(25% - 20px); /* Adjust width: 4 cards per row with spacing */
+  max-width: 300px; /* Optional: Prevent cards from being too wide */
+}
+
+.app-box:hover {
+  transform: translateY(-5px);
+}
+
+.app-thumbnail {
+  max-width: 80%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.btn-download {
+  background-color: #0078ff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+  background-color: #0056d6;
+}
+#subset-sum-title {
+  color: rgb(0, 0, 0); /* Text color */
+  background-color: rgb(225, 225, 149); /* Background color */
+  padding: 10px; /* Optional: Adds space inside the background */
+  border-radius: 5px; /* Optional: Rounds the corners */
+}
+
