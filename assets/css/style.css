@@ -1503,3 +1503,57 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
+
+/* Education Section */
+.section-mf {
+  padding: 60px 0;
+  background-color: #302f2f; /* Matches the theme */
+}
+
+.timeline-date {
+  font-size: 1em;
+  color: #cccccc; /* Subtle color for date */
+}
+
+.degree-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff; /* Make degree title prominent */
+}
+
+.university {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #dcdcdc; /* Light gray for the university name */
+}
+
+.color-text {
+  color: #f5f5f5;
+  line-height: 1.8; /* Improves readability */
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+}
+/* Container for Social Links */
+.social-links {
+  display: flex;
+  gap: 20px; /* Spacing between icons */
+  justify-content: center; /* Centers the icons */
+  margin-top: 20px; /* Adds spacing from surrounding content */
+}
+
+/* Icon Styling */
+.icon-modify {
+  font-size: 1.5rem; /* Adjust icon size */
+  color: #0078ff; /* Default color (LinkedIn blue) */
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.icon-modify:hover {
+  color: #0056b3; /* Darker shade for hover effect */
+}
+
+.icon-modify i {
+  vertical-align: middle; /* Align icons properly */
+}
