@@ -11,25 +11,6 @@ Welcome to my personal portfolio repository! This project showcases my work, pro
 - Smooth scrolling and navigation
 - Contact form with backend integration
 
-## 🧱 PROJECT STRUCTURE
-
-your-repo/
-├── assets/
-│   ├── css/
-│   │   ├── style.css
-│   │   └── experience.css
-│   ├── img/
-│   ├── vendor/
-│   │   ├── bootstrap/
-│   │   ├── bootstrap-icons/
-│   │   ├── glightbox/
-│   │   ├── purecounter/
-│   │   ├── swiper/
-│   │   └── typed.js/
-├── index.html
-├── contact.php
-└── README.md
-
 ## 🛠️ Technologies Used
 
 - **HTML5 & CSS3**
