@@ -63,8 +63,9 @@
           <li><a class="nav-link scrollto" href="#education">Education</a></li>
           <!--<li><a href="#work">Experience</a></li> -->
           <li><a class="nav-link scrollto" href="#work">Experience</a></li>
-
-          <li><a class="nav-link scrollto" href="#project">Project</a></li>
+          <li><a class="nav-link scrollto" href="#real_world_projects">Real-World Projects</a></li>
+          <li><a class="nav-link scrollto" href="#paper">Research Paper</a></li>
+          <li><a class="nav-link scrollto" href="#project">Academic Project</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -368,13 +369,178 @@
       </div>
     </section>
     
-    <!-- ======= Portfolio Section ======= -->
-    <section id="project" class="portfolio-mf sect-pt4 route">
+    <!-- ======= Projects Section ======= -->
+    <section id="real_world_projects" class="portfolio-mf sect-pt4 route">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
             <div class="title-box text-center">
-              <h2 class="title-a">Projects</h2>
+              <h2 class="title-a"> Real World Projects</h2>
+
+            </div>
+          </div>
+        </div>
+
+        <style>
+          .rubric-pdf-section {
+            margin-bottom: 40px;
+          }
+        
+          .rubric-image-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          }
+        
+          .static-img {
+            transform: none !important;
+            transition: none !important;
+          }
+        
+          .static-img:hover {
+            transform: none !important;
+          }
+        </style>
+        
+        <div class="row">
+          <div class="work-box">
+            <div class="work-content">
+              <div class="row">
+                <div class="col-md-10">
+                  <h2 class="color-text-offwhite">Rubric Automation Dashboard — End-to-End Assessment Pipeline</h2>
+                </div>
+                <div class="col-md-2">
+                  <div class="github">
+                    <a style="color:#c2bf24;" 
+                       href="assets/pdf/Rubric_Dashboard.pdf" 
+                       target="_blank" title="View Dashboard PDF">
+                      <span><i class="bi bi-file-earmark-pdf"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="row">
+                <span class="w-category">
+                  The Rubric Automation Dashboard is a fully self-sustaining system designed to handle course evaluation submissions at scale—without any manual intervention. What began as a problem of scattered spreadsheets and endless email follow-ups became a seamless digital pipeline powered by Excel, Power BI, PowerApps, Power Automate, and SharePoint.
+                
+                  <br><br>
+                  Here’s how it works: Professors visit the portal and scroll down to download the latest rubric. This Excel template is intelligently designed with dropdowns for course and core objective, and based on the selected objective, the corresponding evaluation columns auto-update. Professors then enter student data row by row, rename the file to a format like <code>rubric_math1314_2024.xlsx</code>, and upload it through a PowerApps form.
+                
+                  <br><br>
+                  Behind the scenes, Power Automate takes over—grabbing the uploaded file, storing it in the correct SharePoint folder, and prepping it for ingestion by Power BI. On the next scheduled refresh, the dashboard automatically categorizes each row of data into one of six core objective tables using Power Query logic. No matter the course or year, all submissions land in the correct place inside the Power BI model, fully parsed and ready for analysis.
+                
+                  <br><br>
+                  The result? Admins no longer chase down files. Professors don’t need to email anyone. Dr. Collins doesn’t have to merge spreadsheets or manually clean up inconsistent data. And Dr. Edward? He simply opens the dashboard, refreshes the semantic model, and sees the updated reports—categorized, summarized, and beautifully visualized.
+                
+                  <br><br>
+                  The hardest part? Designing the system from scratch. From structuring a flexible Excel template that adapts to any core objective, to building a dashboard that interprets uploads from an entire department, to writing a Power Automate flow that moves files invisibly—every step demanded custom thinking. Even PowerApps required a clever workaround to allow file attachments from a list, and then delete the placeholder record after saving the file to SharePoint.
+                
+                  <br><br>
+                  What makes this system special isn’t just the automation—it’s the architecture. Every file follows a naming convention. Every submission flows through a predefined pipeline. And every update lands in a central, standardized data model. If all rubric files are uploaded correctly, the entire ecosystem runs on its own.
+                
+                  <br><br>
+                  This is more than a tool—it’s an institution-grade solution built for clarity, scalability, and autonomy. And the best part? Once it's set up, there's nothing left to do but watch it run.
+                </span>
+                
+                <br>
+                <div class="text-skills">
+                  <span>Excel, Power BI, PowerApps, Power Automate, Power Query, SharePoint, Workflow Automation, Institutional Reporting</span>
+                </div>
+              </div>
+        
+              <!-- PDF Section -->
+              <div class="rubric-pdf-section">
+                <h4 class="color-text">Dashboard Preview (PDF)</h4>
+                <div class="pdf-preview">
+                  <iframe src="assets/pdf/Rubric_Dashboard.pdf" 
+                          width="100%" height="480px" 
+                          style="border:1px solid #ccc;">
+                  </iframe>
+                </div>
+              </div>
+        
+              <!-- Image Section -->
+              <div class="rubric-image-section">
+                <h4 class="color-text">PowerApps Upload Portal</h4>
+                <div class="image-preview">
+                  <img src="assets/img/PowerApp.png" class="static-img" alt="PowerApp Screenshot" 
+                       style="width:100%; border-radius:8px; border:1px solid #ccc;">
+                </div>
+        
+                <h4 class="color-text">Dynamic Excel Rubric Template</h4>
+                <div class="image-preview">
+                  <img src="assets/img/rubric.png" class="static-img" alt="Rubric Screenshot" 
+                       style="width:100%; border-radius:8px; border:1px solid #ccc;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="row">
+          <div class="work-box">
+            <div class="work-content">
+              <div class="row">
+                <div class="col-md-10">
+                  <h2 class="color-text-offwhite">MasterList 2.0 — Power BI Dashboard for Institutional Reporting</h2>
+                </div>
+                <div class="col-md-2">
+                  <div class="github">
+                    <a style="color:#c2bf24;" 
+                       href="assets/pdf/MASTER_LIST2.0.pdf" 
+                       target="_blank" title="View MasterList Dashboard PDF">
+                      <span><i class="bi bi-file-earmark-pdf"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <span class="w-category">
+                  MasterList 2.0 is a dynamic Power BI dashboard I developed during my Institutional Research internship at UTPB. 
+                  It manages and visualizes survey submissions across all university departments, providing real-time insights into open, closed, and pending reports categorized by status, timeline, department, and submission type.
+                
+                  <br><br>
+                  The dashboard integrates data from Excel, SQL, and SharePoint to automate updates and maintain a centralized view of institutional reporting activity. Executives can monitor compliance, deadlines, and workflow progress without manual tracking or spreadsheet merging.
+                
+                  <br><br>
+                  One of the most intuitive and powerful features of this dashboard is the monthly report interaction. Users can click on a specific month in the bar chart to highlight their area of interest. Once a month is selected, a "View Reports for This Month" button becomes active. Clicking this button performs two key actions:
+                  <ul>
+                    <li>It dynamically changes the title of the Power BI page to say: <strong>“Reports for the month of [Selected Month]”</strong>, ensuring clarity of context.</li>
+                    <li>It navigates to a new page that displays a fully filtered, interactive table showing only the reports to be submitted for that selected month.</li>
+                  </ul>
+                
+                  This interaction design not only improves the user experience, but also ensures that stakeholders can quickly drill down into specific timeframes with confidence and clarity. 
+                  The report table includes detailed metadata such as task rank, department, close/open dates, and approval status—all immediately filtered and accessible.
+                
+                  <br><br>
+                  MasterList 2.0 isn’t just a dashboard—it’s a complete operational tool that supports planning, compliance tracking, and institutional effectiveness. It reduces human error, removes data redundancy, and presents insights in a way that empowers users at every level of the university.
+                </span>
+                
+                <br>
+                <div class="text-skills">
+                  <span>Power BI, Excel, SQL, Power Query, SharePoint, Institutional Research, Workflow Automation</span>
+                </div>
+                <br>
+                <div class="pdf-preview">
+                  <iframe src="assets/pdf/MASTER_LIST2.0.pdf" 
+                          width="100%" height="480px" 
+                          style="border:1px solid #ccc;">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="paper" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h2 class="title-a">Research Paper</h2>
 
             </div>
           </div>
@@ -394,12 +560,14 @@
                       <span><i class="bi bi-github"></i></span>
                     </a>
                     <a style="color:#c2bf24;" 
-                       href="https://github.com/dhimant2299/dhimantadhikari/blob/main/RESEARCHPAPER_ON_GENETIC_ALGORITHMS_BY_ADHIKARI.pdf" target="_blank">
+                       href="assets/pdf/RESEARCHPAPER_ON_GENETIC_ALGORITHMS_BY_ADHIKARI.pdf" 
+                       target="_blank" title="Click to Download Research Paper">
                       <span><i class="bi bi-file-earmark-pdf"></i></span>
                     </a>
                   </div>
                 </div>
               </div>
+        
               <div class="row">
                 <span class="w-category">
                   <strong>Authors:</strong> Dhimant Adhikari, Dr. Priyanka Kumar<br>
@@ -413,11 +581,91 @@
                 <div class="text-skills">
                   <span>Python, Pygame, Genetic Algorithms, Game Simulation, Research Paper, AI Education</span>
                 </div>
+        
+                <!-- Embedded Research Paper PDF -->
+                <div class="pdf-preview" style="margin-top: 20px;">
+                  <iframe src="assets/pdf/RESEARCHPAPER_ON_GENETIC_ALGORITHMS_BY_ADHIKARI.pdf" 
+                          width="100%" height="800px" 
+                          style="border:1px solid #ccc;">
+                  </iframe>
+                </div>
+        
+                <!-- Embedded Video Demo -->
+                <div class="video-container" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin-top:20px;">
+                  <iframe src="https://drive.google.com/file/d/1RZeLewwTKahc4Wbu_jrTq53ic2Byh09S/preview" 
+                          frameborder="0" 
+                          allow="autoplay; encrypted-media" 
+                          allowfullscreen
+                          style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                  </iframe>
+                </div>
               </div>
             </div>
           </div>
         </div>
         
+        
+      </div>
+    </section>
+    <section id="project" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h2 class="title-a"> Academic Projects</h2>
+
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="row">
+          <div class="work-box">
+            <div class="work-content">
+              <div class="row">
+                <div class="col-md-10">
+                  <h2 class="color-text-offwhite">Convolutional Neural Network Visualization</h2>
+                </div>
+                <div class="col-md-2">
+                  <div class="github">
+                    <a style="color:#0078ff;" 
+                        href="https://github.com/dhimant2299/UTPB-COSC-6389-Project3" target="_blank">
+                        <span><i class="bi bi-github"></i></span>
+                    </a>
+                    <a style="color:#c2bf24;" 
+                        href="https://github.com/dhimant2299/UTPB-COSC-6389-Project3/blob/main/Screenshot%202024-12-08%20050601.png?raw=true" target="_blank">
+                        <span><i class="fab fa-google"></i> 👓</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <span class="w-category">
+                  This project implements a <strong>Convolutional Neural Network (CNN)</strong> to classify images into two categories: 
+                  <strong>Glasses</strong> and <strong>No-Glasses</strong>. It includes a real-time visualization using a Tkinter-based GUI, which:
+                  <ul>
+                    <li>Displays the CNN structure: Input, Convolutional, Pooling, and Fully Connected layers.</li>
+                    <li>Shows real-time training metrics: Loss and Accuracy.</li>
+                    <li>Highlights dynamic weight updates through color-coded connections.</li>
+                  </ul>
+                  The project employs Leaky ReLU activation, He initialization for filters, and gradient clipping to stabilize training. 
+                  It demonstrates CNN training from scratch with an interactive and visual approach.
+                </span>
+                <br>
+                <div class="text-skills">
+                  <span>Python 3.x, Tkinter, NumPy, Matplotlib, Scikit-Learn, PIL (Pillow), Convolutional Neural Networks, Visualization</span>
+                </div>
+                <br>
+                <div class="image-preview">
+                  <img src="assets/img/CNN.png" class="static-img" alt="CNN Visualizer Screenshot" 
+                       style="width:100%; border-radius:8px; border:1px solid #ccc;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
         <div class="row">
           <div class="work-box">
@@ -525,46 +773,7 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="work-box">
-            <div class="work-content">
-              <div class="row">
-                <div class="col-md-10">
-                  <h2 class="color-text-offwhite">Convolutional Neural Network Visualization</h2>
-                </div>
-                <div class="col-md-2">
-                  <div class="github">
-                    <a style="color:#0078ff;" 
-                        href="https://github.com/dhimant2299/UTPB-COSC-6389-Project3" target="_blank">
-                        <span><i class="bi bi-github"></i></span>
-                    </a>
-                    <a style="color:#c2bf24;" 
-                        href="https://github.com/dhimant2299/UTPB-COSC-6389-Project3/blob/main/Screenshot%202024-12-08%20050601.png?raw=true" target="_blank">
-                        <span><i class="fab fa-google"></i> 👓</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <span class="w-category">
-                  This project implements a **Convolutional Neural Network (CNN)** to classify images into two categories: 
-                  **Glasses** and **No-Glasses**. It includes a real-time visualization using a Tkinter-based GUI, which:
-                  <ul>
-                    <li>Displays the CNN structure: Input, Convolutional, Pooling, and Fully Connected layers.</li>
-                    <li>Shows real-time training metrics: Loss and Accuracy.</li>
-                    <li>Highlights dynamic weight updates through color-coded connections.</li>
-                  </ul>
-                  The project employs Leaky ReLU activation, He initialization for filters, and gradient clipping to stabilize training. 
-                  It demonstrates CNN training from scratch with an interactive and visual approach.
-                </span>
-                <br>
-                <div class="text-skills">
-                  <span>Python 3.x, Tkinter, NumPy, Matplotlib, Scikit-Learn, PIL (Pillow), Convolutional Neural Networks, Visualization</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
         
         
         <div class="row">
@@ -680,40 +889,6 @@
 
       </div>
     </section>
-
-    
-    <!-- End Portfolio Section -->
-
-    <!-- ======= Contact Section ======= -->
-        <!-- ======= Contact Section =======
-        <section id="contact" class="contact">
-  <div class="container">
-    <div class="section-title">
-      <h2>Contact</h2>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-6">
-        <form action="contact.php" method="post" role="form" class="php-email-form">
-          <div class="form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="form-group">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-          </div>
-          <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-          </div>
-          <div class="text-center">
-            <button type="submit">Send Message</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
- -->
-
 
     <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/infinity.jpg)">
       <div class="overlay-mf"></div>

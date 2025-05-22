@@ -177,3 +177,10 @@
         border-left: 5px solid #dddddd;
     }
 }
+
+
+.pdf-preview iframe:hover {
+    transform: none !important;
+    transition: none !important;
+  }
+  

@@ -1609,3 +1609,7 @@ footer .credits a {
   border-radius: 5px; /* Optional: Rounds the corners */
 }
 
+.pdf-preview iframe:hover {
+  transform: none !important;
+  transition: none !important;
+}
