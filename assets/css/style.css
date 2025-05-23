@@ -1608,8 +1608,3 @@ footer .credits a {
   padding: 10px; /* Optional: Adds space inside the background */
   border-radius: 5px; /* Optional: Rounds the corners */
 }
-
-.pdf-preview iframe:hover {
-  transform: none !important;
-  transition: none !important;
-}
